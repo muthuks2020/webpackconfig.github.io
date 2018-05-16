@@ -110,7 +110,7 @@ const StepByStepArea = ({newNpmConfig, newBabelConfig, isReact}) => {
                 {newBabelConfig ? <div><li>Create <i>.babelrc</i> in the root and copy the contents from below</li>
                     <textarea readOnly={true} rows="11" cols="50" value={newBabelConfig}/></div> : null}
 
-                {isReact ? <li>Create folders src and dist and create your <a href="https://s3-eu-west-1.amazonaws.com/jakoblind/react/index.js">index.js</a> file in src folder and <a href="https://s3-eu-west-1.amazonaws.com/jakoblind/react/index.html">index.html</a> in the dist folder</li> : <li>Create folders src and dist and create your index.js file in src folder</li>}
+                {isReact ? <li>Create folders src and dist and create your <a href="index.js">index.js</a> file in src folder and <a href="https://s3-eu-west-1.amazonaws.com/jakoblind/react/index.html">index.html</a> in the dist folder</li> : <li>Create folders src and dist and create your index.js file in src folder</li>}
             </ol>
             
         </div>
