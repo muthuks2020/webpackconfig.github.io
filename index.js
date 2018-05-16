@@ -59,11 +59,11 @@ const logFeatureClickToGa = (feature, selected) => {
 
 const Header = ({selected, setSelected}) => (
     <div className="header">
-        <h1>webpack 4 configurator</h1>
-        <h2>Create a <i>personalized</i> and <i>optimized</i> webpack.config.js!</h2>
+        <h1>webpack config genrator</h1>
+        <h2>Create a <i>your personalized</i> and <i>optimized</i> webpack.config.js </h2>
 
         <div >
-            <div className="start-here">Start here! What features do you need?</div>
+            <div className="start-here"></div>
         </div>
         <Features
             features={features}
@@ -74,19 +74,7 @@ const Header = ({selected, setSelected}) => (
 
 const Footer = () => (
     <div className="footer">
-        <h3>What is this?  </h3>
-        <p>
-            When using this tool, you get a webpack.config.js that is created just for <i>you</i>. It's a great starting point for further development. The webpack.config.js will create an optimized bundle based on <a href="http://blog.jakoblind.no/3-ways-to-reduce-webpack-bundle-size/">best practices</a>. Advanced optimizations such as code splitting is not (yet?) supported with this tool.
-        </p>
-        <h4>Want more?</h4>
-        <p>Want to be notified when I build more cool stuff like this? And also get early access to articles?</p>
-        <a className="myButton" href="https://www.getdrip.com/forms/81916834/submissions/new">Sign up to my newsletter</a>
-        <h4>Found a bug or want a feature?</h4>
-        <p>Contact me on <a href="https://twitter.com/karljakoblind">twitter</a> or file an issue or even better make a PR on the <a href="https://github.com/jakoblind/webpack-configurator">github repo</a>. Yes this is open source.</p>
-        <h4>Who made this thing?</h4>
-        <p>
-            It's me, Jakob who made this. I write <a href="http://blog.jakoblind.no">a blog about React</a> that you might want to check out if you liked this! I am also on <a href="https://twitter.com/karljakoblind">twitter</a>.
-        </p>
+        
 
     </div>
 );
@@ -124,7 +112,7 @@ const StepByStepArea = ({newNpmConfig, newBabelConfig, isReact}) => {
 
                 {isReact ? <li>Create folders src and dist and create your <a href="https://s3-eu-west-1.amazonaws.com/jakoblind/react/index.js">index.js</a> file in src folder and <a href="https://s3-eu-west-1.amazonaws.com/jakoblind/react/index.html">index.html</a> in the dist folder</li> : <li>Create folders src and dist and create your index.js file in src folder</li>}
             </ol>
-            <a href="http://blog.jakoblind.no/react-with-webpack-babel-npm/">Need more detailed instructions?</a>
+            
         </div>
 
     )
