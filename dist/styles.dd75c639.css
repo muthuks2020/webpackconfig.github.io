@@ -1,0 +1,223 @@
+body {
+    font-family: sans-serif;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+}
+
+#app {
+    margin-bottom: 100px;
+}
+
+.start-here {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    background: url('arrowdown2.8b745e00.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    height: 70px;
+}
+.header {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: small;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    clear:both;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 40em) {
+    .container {
+        flex-direction: column;
+
+    }
+}
+
+.left-section,
+.right-section {
+    padding: 0px 10px 10px 10px;
+    width: 50%;
+}
+@media screen and (max-width: 40em) {
+    .right-section,
+    .left-section{
+        display: block;
+        width: 100%;
+    }
+}
+a {
+    color: #ffb000;
+}
+
+textarea {
+    width: 90%;
+}
+
+.features {
+    padding: 10px;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.feature-group {
+    display: flex;
+}
+
+.feature-group-name {
+    font-size: 18px;
+    text-align: left;
+    min-width: 100px;
+}
+
+.feature-container {
+    display: block;
+    text-align: left;
+    width: 80px;
+    float: left;
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+
+/* Hide the browser's default checkbox */
+.feature-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.feature-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.feature-container input:checked ~ .checkmark {
+    background-color: #33ff00;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.feature-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.feature-container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 3.5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+h3 {
+
+    clear:both;
+}
+
+
+ol {
+    counter-reset:li;
+}
+ol li {
+    position: relative;
+    list-style:none;
+    margin-bottom: 20px;
+
+}
+ol li:before {
+    content:counter(li);
+    counter-increment:li;
+    position:absolute;
+    top:-11px;
+    left:-2em;
+    width:2em;
+    margin-right:8px;
+    padding:4px;
+    font-size: 27px;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+}
+
+
+.myButton {
+        -moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+        box-shadow:inset 0px 1px 0px 0px #fce2c1;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25));
+        background:-moz-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+        background:-webkit-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+        background:-o-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+        background:-ms-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+        background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25',GradientType=0);
+        background-color:#ffc477;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #eeb44f;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #cc9f52;
+}
+.myButton:hover {
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477));
+        background:-moz-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+        background:-webkit-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+        background:-o-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+        background:-ms-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+        background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477',GradientType=0);
+        background-color:#fb9e25;
+}
+.myButton:active {
+        position:relative;
+        top:1px;
+}
